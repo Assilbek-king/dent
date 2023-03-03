@@ -15,7 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.urls import re_path as url
+from django.views.static import serve
+from azizclinic import settings
+from main.views import *
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', indexHandler),
+
+    url(r'^media/(?P<path>.*)$', serve, {
+        'document_root': settings.MEDIA_ROOT
+    })
 ]

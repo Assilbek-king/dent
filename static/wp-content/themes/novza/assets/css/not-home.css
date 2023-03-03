@@ -1,0 +1,227 @@
+
+
+
+
+@media screen and (min-width: 992px) {
+
+
+
+.delivery {
+    padding-top: 60px;
+}
+
+.delivery-first {
+    display: flex;
+
+}
+
+.delivery-first .delivery-first_info {
+    margin-left: 30px;
+    max-width: 470px;
+}
+
+.delivery-first_info .info-block {
+    padding: 30px 35px;
+    background: #FFFFFF;
+    border: 1px solid #F2B918;
+    box-shadow: 0px 12px 32px rgba(10, 9, 8, 0.08);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.delivery-first_info .info-block h1 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.delivery-first_info .info-block h1::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 1px;
+    background: #E5AD1C;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.delivery-info {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+
+}
+
+.delivery-info .info-block {
+    background: #FFFFFF;
+    border: 1px solid #F2B918;
+    box-shadow: 0px 12px 32px rgba(10, 9, 8, 0.08);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+
+}
+
+.payment-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+}
+
+.payment-list .list-item {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #F2B918;
+    box-shadow: 0px 12px 32px rgba(10, 9, 8, 0.08);
+    border-radius: 20px;
+}
+
+.payment-list .list-item img {
+    max-width: 100%;
+}
+
+.contacts-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts-list .list-item {
+    display: flex;
+}
+
+.contacts-list .list-item p {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.contacts-list .list-item img {
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    border: 1px solid #E5AD1C;
+    border-radius: 50%;
+}
+
+span.divider {
+    height: 64px;
+    width: 1px;
+    display: block;
+    background: #E5AD1C;
+}
+
+.page-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: #0A0908;
+    margin-bottom: 30px;
+
+}
+
+.page-title::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #E5AD1C;
+    margin-right: 15px;
+}
+
+.i-open path {
+    fill: #000;
+}
+.header__location-item--2{
+    background: #fff;
+}
+
+@media screen and (max-width:576px) {
+    main {
+        padding-top: 80px;
+    }
+
+    .delivery-first {
+        flex-wrap: wrap;
+    }
+
+    .delivery-first .delivery-first_info {
+        margin-left: 0;
+    }
+
+    .delivery-first_info .info-block h1 {
+        font-size: 20px;
+    }
+
+    .delivery-info {
+        margin-top: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .payment-list {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .delivery-info .info-block {
+        padding: 20px;
+        height: 100px;
+        font-size: 16px;
+    }
+
+    .page-title {
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    .page-title::before {
+        width: 30px;
+    }
+
+    .contacts-list {
+        align-items: normal;
+        flex-direction: column;
+    }
+
+    span.divider {
+        display: none;
+    }
+    .contacts-list .list-item {
+        display: flex;
+        border: 1px solid #E5AD1C;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .contacts-list .list-item img {
+        width: 46px;
+        height: 46px;
+    }
+    .contacts-list .list-item p {
+        font-size: 18px;
+    }
+    .delivery-first_info .info-block {
+        padding: 30px 30px;
+        font-size: 16px;
+    }
+}
+
+.header__link{
+    color: #000;
+}
