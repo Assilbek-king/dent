@@ -47,7 +47,7 @@
 
 	<!-- This site is optimized with the Yoast SEO plugin v19.8 - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Dr Aziz Clinic</title>
-<!--	<meta name="description" content="MDF eshiklarini Toshkent va O&#039;zbekistonda ishlab chiqaruvchidan sotib olmoqchimisiz? Toshkent, Toshkent viloyati va butun O&#039;zbekiston bo&#039;ylab bepul o&#039;lchash, yetkazib berish va o&#039;rnatish bilan sifatli MDF eshiklariga qo&#039;ng&#039;iroq qiling va buyurtma bering. MDF eshiklari raqobatbardosh narxlarda va kafolatlari bilan. +998 (55) 500 55 22 raqamiga qo&#039;ng&#039;iroq qiling!">-->
+<meta name="description" content="dental clinic">
 	<link rel="canonical" href="/">
 	<meta property="og:locale" content="uz_UZ">
 	<meta property="og:locale:alternate" content="ru_RU">
@@ -55,7 +55,6 @@
 	<meta property="og:site_name" content="azizclinic">
 	<meta property="article:modified_time" content="2023-01-14T14:39:18+00:00">
 	<meta name="twitter:card" content="summary_large_image">
-<!--	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://novzaeshiklari.uz/",,"name":"Toshkent va O'zbekistonda eshiklar naqd va buyurtma bo'yicha: ishlab chiqaruvchidan yuqori sifatli MDF eshiklarini yoqimli narxda sotib oling","isPartOf":{"@id":"https://novzaeshiklari.uz/#website"},"about":{"@id":"https://novzaeshiklari.uz/#organization"},"datePublished":"2022-08-06T12:03:58+00:00","dateModified":"2023-01-14T14:39:18+00:00","description":"MDF eshiklarini Toshkent va O'zbekistonda ishlab chiqaruvchidan sotib olmoqchimisiz? Toshkent, Toshkent viloyati va butun O'zbekiston bo'ylab bepul o'lchash, yetkazib berish va o'rnatish bilan sifatli MDF eshiklariga qo'ng'iroq qiling va buyurtma bering. MDF eshiklari raqobatbardosh narxlarda va kafolatlari bilan. +998 (55) 500 55 22 raqamiga qo'ng'iroq qiling!","breadcrumb":{"@id":"https://novzaeshiklari.uz/#breadcrumb"},"inLanguage":"uz-UZ","potentialAction":[{"@type":"ReadAction","target":["https://novzaeshiklari.uz/"]}]},{"@type":"BreadcrumbList","@id":"https://novzaeshiklari.uz/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная страница"}]},{"@type":"WebSite","@id":"https://novzaeshiklari.uz/#website","url":"https://novzaeshiklari.uz/","name":"novzaeshiklari","description":"Ещё один сайт на WordPress","publisher":{"@id":"https://novzaeshiklari.uz/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://novzaeshiklari.uz/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"uz-UZ"},{"@type":"Organization","@id":"https://novzaeshiklari.uz/#organization","name":"Novza Eshiklari","url":"https://novzaeshiklari.uz/","sameAs":["https://www.instagram.com/novza_eshiklari/","https://t.me/novzaeshiklariportfolio","https://www.facebook.com/Novza.Eshiklari.official"],"logo":{"@type":"ImageObject","inLanguage":"uz-UZ","@id":"https://novzaeshiklari.uz/#/schema/logo/image/","url":"/static/wp-content/uploads/2022/08/logo.png","contentUrl":"/static/wp-content/uploads/2022/08/logo.png","width":160,"height":64,"caption":"Novza Eshiklari"},"image":{"@id":"https://novzaeshiklari.uz/#/schema/logo/image/"}}]}</script>-->
 	<meta name="google-site-verification" content="21XWUG1xcjfcNbUK0KbcK-iBYBAc5xjkeqgJAF9fFs4">
 	<meta name="yandex-verification" content="2d6b4e3fd567d62c">
 	<!-- / Yoast SEO plugin. -->
@@ -269,9 +268,10 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 						<div class="popup__right">
 							<div class="cf7sg-container cf7sg-not-grid"><div id="cf7sg-form-ikkilanyapsizmi_uz" class=" key_ikkilanyapsizmi_uz"><div role="form" class="wpcf7" id="wpcf7-f654-o1" lang="uz-UZ" dir="ltr">
 <div class="screen-reader-response"><p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul></div>
-<form action="/" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
-{% csrf_token %}
-<div class="popup__form">
+<div class="wpcf7-form init" novalidate="novalidate" data-status="init">
+
+<form class="popup__form"  action="/" method="post">
+	{% csrf_token %}
 <h3 class="popup__title">Все еще <span>сомневаетесь</span> в выборе?</h3>
 <p class="popup__desc">
    Стоматология создана для тех, кто ценит высокий уровень сервиса, нацелен на качественное лечение и заботится о состоянии своего здоровья.
@@ -280,13 +280,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     <span class="wpcf7-form-control-wrap" data-name="name-1200"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required popup__input" aria-required="true" aria-invalid="false" placeholder="Ваше имя"></span><span class="wpcf7-form-control-wrap" data-name="tel-1201"><input type="tel" name="phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel popup__input phone-mask" aria-required="true" aria-invalid="false" placeholder="+7"></span>
   </div>
 <p>  <button type="submit" class="popup__btn btn">Получить консультацию</button>
-</p></div>
+</p></form>
 <div class="popup__info">
 <p>Или позвоните по телефону:</p>
 <p>  <a href="tel:+77012344556">+7(701) 234-45-56</a>
 </p></div>
 <p><input type="hidden" name="wpcf7tg_sending" value="1"></p>
-<div class="wpcf7-response-output" aria-hidden="true"></div></form></div></div></div>						</div>
+<div class="wpcf7-response-output" aria-hidden="true"></div></div></div></div></div>						</div>
 					</div>
 				</div>
 			</div>
@@ -345,15 +345,15 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <div class="easy-buying__title title">
 О нас в цифрах</div>
 
-<div class="easy-buying__items" style="grid-template-columns: repeat(auto-fill,minmax(245rem,1fr)); grid-gap: 0rem;">
+<div class="easy-buying__items" style="grid-template-columns: repeat(auto-fill,minmax(300rem,1fr)); grid-gap: 0rem;">
 
 	<div class="easy-buying__item" style="margin-bottom: 18px;">
 		<div class="easy-buying__item-text">
 	Специалисты с</div>
 	<p class="counter" style="color: #e7b118;
-    font-size: 43px;
+    font-size: 70px;
     font-weight: 800;
-    font-family: calibri;">12</p>
+    font-family: calibri;">10</p>
 	<div class="easy-buying__item-text">
 	летним опытом </div>
 	</div>
@@ -362,11 +362,11 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		<div class="easy-buying__item-text">
 	Более</div>
 	<p class="counter" style="color: #e7b118;
-    font-size: 43px;
+    font-size: 70px;
     font-weight: 800;
-    font-family: calibri;">20000</p>
+    font-family: calibri;">1000</p>
 	<div class="easy-buying__item-text">
-	 проектов </div>
+	 вкрученных имлантов </div>
 	</div>
 
 
@@ -375,23 +375,23 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		<div class="easy-buying__item-text">
 	Более</div>
 	<p class="counter" style="color: #e7b118;
-    font-size: 43px;
+    font-size: 70px;
     font-weight: 800;
-    font-family: calibri;">15000</p>
+    font-family: calibri;">5000</p>
 	<div class="easy-buying__item-text">
-	успешный  </div>
+	счастливые пациенты   </div>
 	</div>
 
-	<div class="easy-buying__item" style="margin-bottom: 18px;">
-		<div class="easy-buying__item-text" style="color:white">
-	1 </div>
-	<p class="counter" style="color: #e7b118;
-    font-size: 43px;
-    font-weight: 800;
-    font-family: calibri;">170</p>
-	<div class="easy-buying__item-text">
-	кв.м. производственной площади </div>
-	</div>
+<!--	<div class="easy-buying__item" style="margin-bottom: 18px;">-->
+<!--		<div class="easy-buying__item-text" style="color:white">-->
+<!--	1 </div>-->
+<!--	<p class="counter" style="color: #e7b118;-->
+<!--    font-size: 70px;-->
+<!--    font-weight: 800;-->
+<!--    font-family: calibri;">170</p>-->
+<!--	<div class="easy-buying__item-text">-->
+<!--	кв.м. производственной площади </div>-->
+<!--	</div>-->
 
 </div>
 		</div>
@@ -497,7 +497,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 	<section class="seo-text" id="klinika">
 	<div class="container">
-<!--		                       		<p>Novza kompaniyasi siz uchun Toshkentda qulay shartlar bilan ichki eshiklarga buyurtma berishni taklif qiladi. Biz ishlab chiqaruvchi bo’lib, ishlab chiqarishning barcha bosqichlarida sifat nazoratini amalga oshiramiz. Besh yillik kafolat mahsulotimizning asosiy afzalliklaridan biridir. MDF eshiklari katalogimizda turli stilistik talablarga javob beradigan keng assortiment taqdim etilgan. Kompaniya tayyor ko’rinishdagi eshiklarni ishlab chiqaradi. Bundan tashqari, yil davomidagi o&#8217;rnatish va xizmat ko&#8217;rsatish eshiklar narxiga kiritilgan. O&#8217;zbekistonda MDF eshiklarini sotib olish bo&#8217;yicha taklifimizning ushbu va boshqa xususiyatlari haqida bizning obzorimizda so’z yuritiladi.</p>-->
 <p>&nbsp;</p>
 		<div class="our-products__title title">
 			О клинике	<span style="color:gold">Dr. Aziz</span>		</div>
@@ -524,7 +523,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 			</div>
 			<div class="complaints__bottom">
 				<div class="complaints__name">
-					Талипов Азизжон				</div>
+					Азизжон Кахраманович				</div>
 				<div class="complaints__desc">
 					Сооснователь клиники Dr Aziz				</div>
 			</div>
@@ -537,7 +536,9 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 <div class="complaints__form form-complaints">
 
-	<h2>АЗИЗ <span style="color:gold">ТАЛИПОВ</span></h2><br>
+	<h2>ТАЛИПОВ <span style="color:gold">АЗИЗ КАХРАМАНОВИЧ</span></h2><br>
+	<p>Доктор Талипов Азиз Кахраманович хирург-имплантолог-ортопед высшей категорий профессионал в сфере имплантации и хирургии который обучался у зарубежных экспертов таких как:Гаджи Даджаев, Сардор Мирахмедов, Ислам Юсупов, Дамир Мухамадиев, Бекжан Омешбаев, Ирада Бабашева, Арлан Жамбылович, Мин Чунг.</p><br>
+
 <p>Доктор Азиз Кахраманович, оказывает стоматологические услуги на высшем уровне, самыми передовыми технологиями, такими как апекслокатор, бинокуляр, плазмолифтинг и т.д. Он обучался во многих городах Азии и Европы,учавствовал во многих семинарах и симпозиумах, по сей день ищет новые знания и новые возможности стать лучше для Вашего здоровья!</p>
 <br>
 	<ul style="list-style-type: disc;margin-left: 15px">
@@ -697,7 +698,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <a href="#door{{ pr.id }}" class="item-our-product__img popup-link">
 <img alt=" Картинка" data-src="/media/{{ pr.logo }}" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
 </a>
-	<a href="#door{{ pr.id }}"><h1 style="text-align:center;text-transform: uppercase;padding-top:10px;    color: #e7b118;">{{ pr.name }} {{ pr.last_name }}</h1></a>
+	<a href="#door{{ pr.id }}"><h1 style="text-align:center;text-transform: uppercase;padding-top:10px;    height: 44px;    color: #e7b118;">{{ pr.name }} {{ pr.last_name }}</h1></a>
 	<h1 style="text-align:center;padding-top:10px;    color: black;">{{ pr.job }}</h1>
 <a href="#door{{ pr.id }}" class="item-our-product__link popup-link">
 Побробнее </a>
@@ -717,15 +718,12 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 
 
-							<div class="easy-buying__item" style="width: 100%;margin:0px 0px;">
+							<div class="easy-buying__item" style="width: 100%;margin:0px 0px;border-radius: 20rem;">
 							<img alt="Картинка" data-src="/media/{{ pr.logo }}" style="width:50%" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript>
 								<img src="/media/{{ pr.logo }}" alt="Картинка" style="width: 50%"></noscript>
 							<div class="easy-buying__item-text">
 								<h1>{{ pr.title }}</h1>
-							<p style="    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+							<p style="
     margin-top:10px;">{{ pr.description }}</p>.
 
 							</div>

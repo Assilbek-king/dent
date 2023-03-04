@@ -38,4 +38,5 @@ def indexHandler(request):
         'doctors': doctors,
         'otzivs': otzivs,
         'services': services,
+        'galeries': galeries,
     })
