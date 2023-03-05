@@ -6176,7 +6176,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 }
 
 .encountered-issues__content {
-	padding-bottom: 380rem;
+/*	padding-bottom: 380rem;*/
 	position: relative;
 }
 
@@ -6188,9 +6188,8 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .encountered-issues__items {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-gap: 10rem 30rem;
-	max-width: 700rem;
 }
 
 .encountered-issues__content>img {
@@ -6231,10 +6230,11 @@ body:not(.is-using-mouse) .fancybox__container :focus {
 
 .encountered-issues__item {
 	padding: 20rem 0 20rem 60rem;
-	line-height: 150%;
+	display:flex;
+	justify-content:space-between;
+	border-bottom: 2px dotted gold;
 	font-size: 18rem;
-	background: url("../img/svg/close-x.svg") left/35rem no-repeat;
-	max-width: 320rem;
+	background: url("../img/svg/close.png") left/35rem no-repeat;
 	width: 100%;
 }
 

@@ -10,7 +10,8 @@ def indexHandler(request):
     doctors = Doctor.objects.filter(status=True)
     services = Service.objects.filter(status=True)
     otzivs = Otziv.objects.all()
-    galeries = Gallery.objects.all()
+    prices = Price.objects.all()
+    galeries = Gallery.objects.order_by('-id')
 
     # galleries = Gallery.objects.all()
     # reviews = Review.objects.filter(status=True)
@@ -39,4 +40,5 @@ def indexHandler(request):
         'otzivs': otzivs,
         'services': services,
         'galeries': galeries,
+        'prices': prices,
     })

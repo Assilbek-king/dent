@@ -674,6 +674,30 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	</div>
 </section>
 
+
+	<section class="feedback" id="sena">
+	<div class="encountered-issues__title title">
+		Стоимость <span>услуг</span>
+<!--		<p style="font-size: 18rem;">Окончательная стоимость формируется после-->
+<!--согласования и выбора альтернативного плана-->
+<!--лечения с лечащим врачём стоматологом.</p>-->
+	</div>
+
+	<div class="encountered-issues__content">
+		<div class="container">
+			<div class="encountered-issues__items">
+				{% for pr in prices %}
+										<div class="encountered-issues__item">
+							<strong>{{ pr.name }}</strong>
+											<strong>{{ pr.price }}тг</strong>
+										</div>
+				{% endfor %}
+		</div><br>
+<a href="/static/price.pdf" class="easy-buying__link button popup-link">
+			Побробнее		</a>
+	</div>
+</section>
+
 	<section class="our-products" id="vrach">
 	<div class="container">
 		<div class="our-products__content">
@@ -698,8 +722,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <a href="#door{{ pr.id }}" class="item-our-product__img popup-link">
 <img alt=" Картинка" data-src="/media/{{ pr.logo }}" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
 </a>
-	<a href="#door{{ pr.id }}"><h1 style="text-align:center;text-transform: uppercase;padding-top:10px;    height: 44px;    color: #e7b118;">{{ pr.name }} {{ pr.last_name }}</h1></a>
-	<h1 style="text-align:center;padding-top:10px;    color: black;">{{ pr.job }}</h1>
+	<a href="#door{{ pr.id }}"><h1 style="text-align:center;text-transform: uppercase;padding-top:10px;      color: #e7b118;">{{ pr.name }} {{ pr.last_name }}</h1></a>
+	<h1 style="text-align:center;padding-top:10px; height: 44px;    color: black;">{{ pr.job }}</h1>
 <a href="#door{{ pr.id }}" class="item-our-product__link popup-link">
 Побробнее </a>
 
@@ -1192,7 +1216,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 			{% for gal in galeries %}
 								<div class="swiper-slide">
 						<a href="/media/{{ gal.logo }}" class="examples__img" data-fancybox="examples">
-							<img alt="Картинка" data-src="//media/{{ gal.logo }}" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="/media/{{ gal.logo }}" alt="Картинка"></noscript>
+							<img alt="Картинка" data-src="/media/{{ gal.logo }}" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="/media/{{ gal.logo }}" alt="Картинка"></noscript>
 						</a>
 					</div>
 			{% endfor %}
@@ -1241,33 +1265,10 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 
 
-<!--	<section class="encountered-issues">-->
-<!--	<div class="encountered-issues__title title">-->
-<!--		Tanlovda adashsangiz, quyidagi <br> <span>muammolarga</span> duch kelishingiz mumkin:	</div>-->
-<!--	<div class="encountered-issues__content">-->
-<!--		<div class="container">-->
-<!--			<div class="encountered-issues__items">-->
-<!--										<div class="encountered-issues__item">-->
-<!--							<strong>Asablaringiz va qimmatli</strong> vaqtingizdan ayrilishingiz						</div>-->
-<!--										<div class="encountered-issues__item">-->
-<!--							Furnitura tez <strong>sinib ketishi</strong>, ishdan chiqishi						</div>-->
-<!--										<div class="encountered-issues__item">-->
-<!--							Eshik muddatdan <strong>kechiktirib berilishi</strong>						</div>-->
-<!--										<div class="encountered-issues__item">-->
-<!--							Uyingiz intereriga <strong>mos tushmay qolishi yoki yo'qligi</strong>						</div>-->
-<!--										<div class="encountered-issues__item">-->
-<!--							<strong>Qiynalib topgan</strong> mablag'ingizni yo'qotishingiz						</div>-->
-<!--										<div class="encountered-issues__item">-->
-<!--							Qish kunlarida o'zidan <strong>sovuq shamol</strong> o'tkazishi						</div>-->
-<!--										<div class="encountered-issues__item">-->
-<!--							Tezda <strong>rangi o'chib</strong>, sarg'ayib ketishi						</div>-->
-<!--										<div class="encountered-issues__item">-->
-<!--							Eshikka suv tegsa, <strong>shishib ketishi</strong> yoki yorilishi						</div>-->
-<!--							</div>-->
-<!--		</div>-->
-<!--		<img alt="Картинка" data-src="/static/wp-content/themes/novza/assets/img/encountered-issues-bg.png" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="><noscript><img src="/static/wp-content/themes/novza/assets/img/encountered-issues-bg.png" alt="Картинка"></noscript>-->
-<!--	</div>-->
-<!--</section>-->
+
+
+
+
 <!--	-->
 <!--	-->
 <!--	<section class="encounter-costs">
